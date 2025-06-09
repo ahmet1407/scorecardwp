@@ -33,7 +33,6 @@ def message():
     try:
         product_data = scrape_link(incoming_msg)
         scorecard = generate_scorecard(product_data)
-
         msg = (
             f"📌 {scorecard['name']}\n"
             f"💸 {scorecard['price']}\n"

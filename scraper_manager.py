@@ -10,4 +10,4 @@ def get_scraper_for_url(platform):
     elif platform == "trendyol":
         return scrape_trendyol_product
     else:
-        return None
+        raise Exception("Desteklenmeyen platform.")
